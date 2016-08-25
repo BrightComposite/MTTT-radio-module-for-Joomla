@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+audio
+{
+    position: relative;
+    top:  16px;
+    left: 16px;
+}
+
+#text_wrapper
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 25px;
+	padding-bottom: 6px;
+	margin-top: -6px;
+}
+
+#player_text
+{
+	position: relative;
+	display: table;
+	height: 100%;
+	/*text-align: center;*/
+	text-align: center;
+	line-height: 16px;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+.player-main
+{
+    float: left;
+	display: inline-block;
+	position: relative;
+}
+
+.volume-wheel
+{
+	float: right;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#v_selector
+{
+    float: left;
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	
+	margin-top: 50px;
+	margin-left: -40px;
+	
+	border: 2px solid #222;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	background-color: #333;
+	
+	text-align: center;
+	line-height: 13px;
+	font-size: 8px;
+	
+	cursor: pointer;
+}
+
+.player-back,
+.player-main,
+.player-forward,
+.player-settings {
+	display: inline-block;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 16px 8px;
+	
+	cursor: pointer;
+}
+
+.player-back {
+    background: url("../img/back.png");
+    background-size: cover;
+}
+
+.player-main {
+    background: url("../img/play.png");
+    background-size: cover;
+}
+
+.player-forward {
+    background: url("../img/forward.png");
+    background-size: cover;
+}
+
+.player-settings
+{
+    background: url("../img/settings.png");
+    background-size: cover;
+}
+
+.station
+{
+	float: left;
+	position: relative;
+	display: inline-block;
+	max-height: 24px;
+	padding: 8px;
+	width: 80px;
+    margin-top: 13px;
+	
+	text-align: center;
+	line-height: 22px;
+	font-size: 16px;
+	
+	cursor: default;
+	color: #d80;
+	font-weight: bold;
+	font-size: 18px;
+	/*text-shadow: #ffaa00 0px 0px 6px;*/
+}
+
+.horizontal #slider
+{
+	width: 122px;
+	height: 20px;
+	
+	margin-top: -16px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.horizontal #slider_line
+{
+	width: 120px;
+	height: 2px;
+	margin-top: 8px;
+}
+
+.horizontal #slider_handle
+{
+	width: 18px;
+	height: 8px;
+	margin-top: -7px;
+	margin-left: -10px;
+}
+
+.vertical
+{
+	float: left;
+	display: inline-block;
+}
+
+.vertical #slider
+{
+	width: 20px;
+	height: 38px;
+	
+	margin: 10px;
+	margin-top: 12px;
+}
+
+.vertical #slider_line
+{
+	width: 2px;
+	height: 32px;
+	
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: -12px;
+}
+
+.vertical #slider_handle
+{
+	width: 18px;
+	height: 8px;
+}
+
+#slider
+{
+	display: inline-block;
+	cursor: pointer;
+}
+
+#slider_line
+{
+	display: inline-block;
+	
+	border: 1px solid #555;
+	background-color: #333;
+}
+
+#slider_handle
+{
+	border: 1px solid #666;
+	background-color: #bbb;
+	
+	-webkit-transition: background-color linear .1s;
+	-moz-transition: background-color linear .1s;
+	-o-transition: background-color linear .1s;
+	transition: background-color linear .1s;	
+}
+
+#autoplay
+{
+	display: none;
+}
+
+#radio_menu
+{
+	width: 640px;
+}
+
+#radio_menu .title
+{
+	padding-top: 0 6px;
+	margin-top: -2px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 28px;
+}
+
+#radio_menu .element
+{
+	font-size: 28px;
+	font-weight: bold;
+	color: #840;
+}
+
+.options_list
+{
+	margin: 0;
+	padding: 8px 0 16px 0;
+}
+
+.option
+{
+	margin: 14px 100px;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	
+	-webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 4px rgba(0,0,0,0.75);
+	
+	z-index: 50;
+	
+	color: #fff;
+	
+	background-color: #730;
+	-webkit-transition: background-color linear .1s;
+	-moz-transition: background-color linear .1s;
+	-o-transition: background-color linear .1s;
+	transition: background-color linear .1s;	
+}
+
+.option:HOVER
+{
+	background-color: #840;
+	color: #fa0;
+}
+
+.option.current
+{
+	color: #e72;
+	background-color: #730;
+	cursor: default;
+}
+
+.action .option:HOVER
+{
+	color: #d94;
+}
+
+@media (max-width: 670px)
+{
+	#radio_menu
+	{
+		width: 280px;
+	}
+	
+	#radio_menu .title,
+	#radio_menu .element,
+	.option
+	{
+		font-size: 16px;
+	}
+	
+	.option {
+		margin: 8px 30px;
+	}
+	
+	.options_list
+	{
+		padding-bottom: 8px;
+	}
+}

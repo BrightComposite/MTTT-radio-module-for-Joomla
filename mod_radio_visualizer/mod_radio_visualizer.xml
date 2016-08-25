@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3" method="upgrade" client="site">
+    <name>MTTT Radio Visualizer</name>
+    <author>MTTT Studio</author>
+    <creationDate>20.01.2015</creationDate>
+	<authorUrl>http://www.mttt.ru</authorUrl>
+	<copyright>(c) MTTT Studio, 2015</copyright>
+	<license>GNU/GPL license: http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0</version>
+    <description>MOD_RADIO_VISUALIZER_XML_DESC</description>
+    <files>
+        <filename module="mod_radio_visualizer">mod_radio_visualizer.php</filename>
+		<folder>css</folder>
+		<folder>language</folder>
+		<filename>mod_radio_visualizer.xml</filename>
+	</files>
+	<languages>
+		<language tag="ru-RU">language/ru-RU/ru-RU.mod_radio_visualizer.ini</language>
+	</languages>
+</extension>

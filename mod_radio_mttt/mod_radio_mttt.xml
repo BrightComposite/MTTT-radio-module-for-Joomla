@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3" method="upgrade" client="site">
+    <name>MTTT Radio</name>
+    <author>MTTT Studio</author>
+    <creationDate>20.01.2015</creationDate>
+	<authorUrl>http://www.mttt.ru</authorUrl>
+	<copyright>(c) MTTT Studio, 2015</copyright>
+	<license>GNU/GPL license: http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0</version>
+    <description>MOD_RADIO_MTTT_XML_DESC</description>
+    <files>
+        <filename module="mod_radio_mttt">mod_radio_mttt.php</filename>
+		<folder>ajax</folder>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>include</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<filename>mod_radio_mttt.xml</filename>
+	</files>
+	<languages>
+		<language tag="ru-RU">language/ru-RU/ru-RU.mod_radio_mttt.ini</language>
+	</languages>
+</extension>
